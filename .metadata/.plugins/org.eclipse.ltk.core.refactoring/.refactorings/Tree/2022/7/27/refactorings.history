@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;binaryTree.binaryTree.root&apos; in &apos;binaryTree.binaryTree&apos;&#x0A;- Original project: &apos;Tree&apos;&#x0A;- Original element: &apos;binaryTree.binaryTree.root&apos;&#x0A;- Getter method name: &apos;getRoot&apos;&#x0A;- Setter method name: &apos;setRoot&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;root&apos;" flags="589830" getter="getRoot" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;binaryTree{binaryTree.java[binaryTree^root" insertion="-1" setter="setRoot" stamp="1657377736816" version="1.0" visibility="1"/>
+</session>

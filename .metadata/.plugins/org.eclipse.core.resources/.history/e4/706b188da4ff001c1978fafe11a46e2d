@@ -1,0 +1,24 @@
+package binaryTree;
+
+public class binaryTree<T> { // <T> generisch
+	private TreeNode<T> root; // wo beginnt der Baum
+
+	public binaryTree(TreeNode<T> root) {
+		super();
+		this.root = null;
+		// TODO Auto-generated constructor stub
+	}
+	
+	public binaryTree() {
+		root = null;
+	}
+
+	public TreeNode<T> getRoot() {
+		return root;
+	}
+
+	public void setRoot(TreeNode<T> root) {
+		this.root = root;
+	}
+	
+}

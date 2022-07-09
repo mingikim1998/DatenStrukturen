@@ -1,0 +1,40 @@
+package binaryTree;
+
+public class binaryTree<T> { // <T> generisch
+	private TreeNode<T> root; // wo beginnt der Baum
+
+	public binaryTree(TreeNode<T> root) {
+		super();
+		this.root = null;
+	}
+	
+	public binaryTree() {
+		root = null;
+	}
+
+	public TreeNode<T> getRoot() {
+		return root;
+	}
+
+	public void setRoot(TreeNode<T> root) {
+		this.root = root;
+	}
+	
+	public void printTreeInOrder() {
+		printTreeInOrder(this.root);
+	}
+	
+	private void printTreeInOrder(TreeNode<T> n) {
+		if (n != null) {
+			printTreeInOrder(n.getLeft());
+			System.out.println(n.toString());
+			printTreeInOrder(n.getRight());
+		}
+	
+//	public void printTreeInOrder(TreeNode<T> n) {
+//		printTreeInOrder(n.getLeft());
+//		System.out.println(n.toString());
+//		printTreeInOrder(n.getRight());
+	}
+	
+}

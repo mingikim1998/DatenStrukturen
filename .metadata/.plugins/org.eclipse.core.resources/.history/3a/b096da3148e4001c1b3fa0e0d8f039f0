@@ -1,0 +1,40 @@
+public class Main {
+    public static void main(String[] args){
+    	int a = 3;
+    	int b = 500;
+    	int[] list = {5,6,496};
+    	System.out.println(find(list,a,b));
+    }
+    static int find(int[] list, int a, int b) {
+    	int cnt =b;
+    	int aa =a;
+    	int bb=b;
+    	for (int i =0; i<a; i++) {
+    		if (b<list[i]) {aa--;}
+    	}
+    	for (int i=aa-1; i>=0;i--) {
+    		int tmp = 0;
+    		tmp += bb/list[i];
+    		bb -= list[i]*(bb/list[i]);
+    		if (bb==0 && tmp<cnt) {
+    			cnt = tmp;
+    		}
+    		for (int j=i-1;j>=0;j--) {
+    			if (bb-list[j]<0 && j!=0) {
+    				continue;
+    			}
+    			else if (bb-list[j]<0 && j==0) {
+            		break;
+    			}
+    			else {
+    	    		tmp += bb/list[j];
+    	    		bb -= list[j]*(bb/list[j]);
+    			}
+        		if (bb==0 && tmp<cnt) {
+        			cnt = tmp;
+        		}
+    		}
+    	}
+    	return cnt;
+    }
+}

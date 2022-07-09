@@ -1,0 +1,27 @@
+package binaryTree;
+
+public class test {
+
+	public static void main(String[] args) {
+		TreeNode<String> n1 = new TreeNode<String> ("B");
+		n1.setLeft(new TreeNode<String> ("D"));
+		n1.setRight(new TreeNode<String> ("E"));
+		
+
+		TreeNode<String> n2 = new TreeNode<String> ("C");
+		n2.setLeft(new TreeNode<String> ("F"));
+		n2.setRight(new TreeNode<String> ("G"));
+
+
+		TreeNode<String> n0 = new TreeNode<String> ("A");
+		
+		n0.setLeft(n1);
+		n0.setRight(n2);
+
+		binaryTree<String> btree = new binaryTree<String>();
+		btree.setRoot(n0);
+		
+		btree.printTreeInOrder();
+	}
+
+}
