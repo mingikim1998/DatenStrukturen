@@ -1,7 +1,0 @@
-
-public class PVL6segments {
-	
-	public static StringBuilder segments(ArrayList<Integer> numbersList) {
-	    
-	}
-}

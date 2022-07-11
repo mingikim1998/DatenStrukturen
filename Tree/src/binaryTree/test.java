@@ -21,7 +21,8 @@ public class test {
 		binaryTree<String> btree = new binaryTree<String>();
 		btree.setRoot(n0);
 		
-		btree.printTreeInOrder();
+		// btree.printTreeInOrder();
+	syso
 	}
 
 }

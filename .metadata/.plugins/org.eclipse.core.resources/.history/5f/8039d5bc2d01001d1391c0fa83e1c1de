@@ -1,0 +1,16 @@
+package btree;
+
+public class BTree {
+	class Node{
+		// KnotenTypen
+		public static final int LEAF_PAGE = 0;
+		public static final int NODE_PAGE = 1;
+		
+		// SucherErgibnisse
+		public static final int KEYFOUND = -1;
+		public static final int KEY_NOT_FOUND = -2;
+		
+		Node parent = null;
+		Vector<Comparable> element;
+	}
+}
